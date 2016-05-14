@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="daman.com.foodfriends" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="Foodoz"
+        android:theme="@style/FoodTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="Foodoz" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SelectFood"
+            android:label="SelectFood">
+        </activity>
+        <activity
+            android:name=".FoodList"
+            android:label="FoodList"
+            android:parentActivityName=".MainActivity" >
+        </activity>
+        <activity
+            android:name=".Descrip"
+            android:label="Description"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+            android:name=".Credits"
+            android:label="Credits"
+            android:parentActivityName=".MainActivity">
+        </activity>
+    </application>
+
+</manifest>
